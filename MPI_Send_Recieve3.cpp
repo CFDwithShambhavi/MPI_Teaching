@@ -109,7 +109,7 @@ int main()
             {
                 MPI_Status status ;
                 int count ;
-                // Get informations about the data recieved from processor 0:
+                // Get informations about the data recieved from processor 1:
                 MPI_Probe (r, 0, MPI_COMM_WORLD, &status) ;
                 MPI_Get_count (&status, MPI_INT, &count) ;
                 
